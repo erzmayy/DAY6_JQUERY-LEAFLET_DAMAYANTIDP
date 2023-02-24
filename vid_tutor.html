@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#btnpertama").click(function(){
+                alert("Data Tersimpan")
+            })
+            $(".btnkedua").click(function(){
+                alert("Batal")
+            })
+            $("#inputPertama").change(function(){
+                console.log ("----TES----")
+            })
+        })
+    </script>
+
+</head>
+<body>
+    <h1>Belajar Query</h1>
+    <!-- FORM -->
+    <form>
+        <label>Masukan Nama</label>
+        <input id="inputPertama"/>
+        </br>
+   
+        <label>Alamat</label>
+        <input id="inputKedua"/>
+        </br>
+
+        <label>Email</label>
+        <input id="inputKetiga"/>
+        </br>
+    </form>
+
+
+    <!-- BUTTON COMMAND -->
+    <button id="btnpertama">
+        ENTER
+    </button>
+    <button class="btnkedua">
+        CANCEL
+    </button>
+
+
+</body>
+
+</html>

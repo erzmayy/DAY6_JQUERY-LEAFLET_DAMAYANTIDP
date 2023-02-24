@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" >
+    <link href="css/style.css" rel="stylesheet">
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+ 
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" href="/docs/5.3/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="manifest" href="/docs/5.3/assets/img/favicons/manifest.json">
+    <link rel="mask-icon" href="/docs/5.3/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+    <link rel="icon" href="/docs/5.3/assets/img/favicons/favicon.ico">
+    <meta name="theme-color" content="#712cf9">
+
+</head>
+
+<link href="css/sign-in.css" rel="stylesheet">
+<body class="text-center">
+    <!-- FORM -->
+    <main class="form-signin w-100 m-auto">
+        <form>
+          <img class="mb-2" src="assets/may.png" alt="" width="100" height="57">
+          <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+    
+          <div class="form-floating">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@examples.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+      
+          <div class="checkbox mb-3">
+            <label>
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+          </div>
+
+          <div class="d-grid gap-2 d-md-block">
+          <button class="btnpertama btn btn-lg btn-success" type="button">Sign in</button>
+          <button class="btnkedua btn btn-lg btn-success" type="buttons">Exit</button>
+        </div>
+          <p class="mt-5 mb-3 text-muted">&copy; Damayanti Diah P 2023</p>
+        </form>
+      </main>
+
+      <script>
+
+        $(document).ready(function(){
+            $(".btnpertama").click(function(){
+                alert("Silahkan login dahulu")
+            })
+            $(".btnkedua").click(function(){
+                alert("Apakah Anda Akan Keluar???")
+            })
+            $("#inputPertama").change(function(){
+                console.log ("----TES----")
+            })
+        })
+      </script>
+
+ <!-- BUTTON COMMAND -->
+ <!-- <button id="btnpertama">
+    ENTER
+</button>
+<button class="btnkedua">
+    CANCEL
+</button> -->
+
+</body>
+
+</html>
